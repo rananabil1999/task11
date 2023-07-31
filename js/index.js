@@ -91,8 +91,8 @@ function login(){
     for(var i = 0; i< signUpArray.length;i++){
         if(signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()){
             localStorage.setItem('sessionUsername',signUpArray[i].name)
-            if (baseURL == '/login-app') {
-                location.replace('https://' + location.hostname + '/login-app/home.html')
+            if (baseURL == '//task11') {
+                location.replace('https://' + location.hostname + '/task11/home.html')
 
             } else {
                 location.replace(baseURL + '/home.html')
@@ -105,8 +105,8 @@ function login(){
 }
 
 var username = localStorage.getItem('sessionUsername')
-if(username){
-    document.getElementById('username').innerHTML= `Welcome ${username}`
+if (username) {
+    document.getElementById('username').innerHTML = "Welcome " + username
 }
 
 function logout(){
