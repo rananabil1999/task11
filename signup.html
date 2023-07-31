@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container text-center my-5">
+        <div class="group p-5 w-75 m-auto test">
+            <h1>Smart Login System</h1>
+            <input type="text" placeholder="Enter your name" class="my-3 form-control" id="signupName">
+            <input type="email" placeholder="Enter your email" class="my-3 form-control" id="signupEmail">
+            <input type="password" placeholder="Enter your password" class="my-3 form-control" id="signupPassword">
+            <p id="exist"></p>
+            <button class="btn w-100 my-3" onclick="signUp()">Sign Up</button>
+            <p class="text-white">You have an account? <a href="index.html" class="text-white text-decoration-none">Signin</a></p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
