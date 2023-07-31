@@ -86,7 +86,8 @@ function login(){
         document.getElementById('incorrect').innerHTML=`<span class="text-danger m-3">All inputs is required</span>`
         return false ;        
     }
-    var email = signinEmail.value
+    if(signUpArray.length != 0){
+        var email = signinEmail.value
     var password = signinPassword.value
     for(var i = 0; i< signUpArray.length;i++){
         if(signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()){
@@ -101,6 +102,9 @@ function login(){
         }else{
             document.getElementById('incorrect').innerHTML=`<span class="text-danger m-3">incorrect email or password</span>`
         }
+    }
+    }else{
+        document.getElementById('incorrect').innerHTML=`<span class="text-danger m-3">invalid email or password</span>`
     }
 }
 
